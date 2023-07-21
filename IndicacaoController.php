@@ -39,6 +39,11 @@ class IndicacaoController extends Controller {
 		 $telefone = $dados['telefone'];
 		 $email    = $dados['email'];
 		 
+		 // Valida nome vazio
+		 if (empty($nome)) {
+			return response()->json(['msg'=>'Erro: campo nome vazio.', 'error'=>true]);
+		 }
+		 
 		 // Validando CPF
 		 $validaCpf = $this->validacao->validaCPF($cpf);
 		 if ($validaCpf==2) {
