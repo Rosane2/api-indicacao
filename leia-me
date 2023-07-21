@@ -77,13 +77,10 @@ CREATE TABLE public.indicacaostatus (
 
 	Route::get('/showindicacaostatus/{id}', 'IndicacaoController@showindicacaostatus');
 
-
 # Testes realizados no POSTMAN
-
-
 -----
 # APLICAÇÕES USADAS NO DESENVOLVIMENTO
   Foi usado como base o Bitnami com Apache, PHP, Postgresql e Laravel
 # TESTES
    Foi usado o POSTMAN para realização dos testes da API
-
+   Detalhes dos teste, vide documento api-indicacao-guia.pdf
